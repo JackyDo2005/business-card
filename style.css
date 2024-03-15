@@ -1,0 +1,110 @@
+html {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 3%, rgba(247, 236, 174, 1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container>h1 {
+    text-align: center;
+    color: rgb(206, 177, 12);
+    font-size: 50px;
+    margin: 15px;
+    transition: 1s ease-in-out;
+    font-family: 'Sacramento', cursive;
+}
+
+.business-card>h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.container>h1:hover {
+    animation: textAnimation 3s infinite alternate;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 7px solid rgb(206, 177, 12);
+    border-radius: 50px;
+    animation: borderAnimation 3s infinite alternate;
+    background-color:  white;
+}
+
+.box {
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 177, 12);
+}
+
+.box a {
+    text-decoration: none;
+    color: red;
+    
+}
+
+span {
+    display: block-inline;   
+}
+
+#contact {
+    color: red;
+    text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(206, 177, 12);
+    }
+
+    20% {
+        border-color: rgb(226, 202, 66);
+    }
+
+    40% {
+        border-color: rgb(197, 181, 93);
+    }
+
+    60% {
+        border-color: rgb(194, 180, 102);
+    }
+
+    80% {
+        border-color: rgb(194, 187, 147);
+    }
+
+    100% {
+        border-color: rgb(221, 219, 209);
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        color: rgb(206, 177, 12);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
